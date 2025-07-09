@@ -36,13 +36,13 @@ spring:
             client-id: 'elastic-query-web-client'
             client-secret: ENC(VGDK0WkbOaQxBxx3boviYRUwMMoRHcH5KqUecFPsv18YaTjpRv3oRcNh5p8rymU4iM3R40fT1ftTKTjuzCc0pJOqmJlhJ6LT3PZzAs1Lad0=)
             authorization-grant-type: authorization_code
-            redirect-uri: http://elastic-query-web-client:8184/elastic-query-web-client/login/oauth2/code/keycloak
+            redirect-uri: http://elastic-query-web-client-1:8184/elastic-query-web-client/login/oauth2/code/keycloak
             scope: openid
         provider:
           keycloak:
-            issuerUri: http://localhost:9091/auth/realms/microservices-realm
+            issuerUri: http://http://keycloak-authorization-server:9091/auth/realms/microservices-realm
 security:
-  logout-success-url: http://localhost:8184/elastic-query-web-client
+  logout-success-url: http://elastic-query-web-client-1:8184/elastic-query-web-client
   default-client-registration-id: keycloak
 
 user-config:
