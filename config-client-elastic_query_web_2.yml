@@ -42,7 +42,7 @@ spring:
           keycloak:
             issuerUri: http://keycloak-authorization-server:9091/auth/realms/microservices-realm
 security:
-  logout-success-url: http://elastic-query-web-client-2:8185/elastic-query-web-client
+  logout-success-url: http://elastic-query-web-client-2 :8185/elastic-query-web-client
   default-client-registration-id: keycloak
 
 user-config:
