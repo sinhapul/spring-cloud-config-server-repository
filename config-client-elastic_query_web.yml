@@ -47,5 +47,5 @@ security:
 
 user-config:
   username: test
-  password: ENC(zON9u7s3ED6OuJ7WLug8SfBiPBJrOFEmvrdyBRZZbAUX7LScGQMIppJvfoVkW5lC)
+  password: '{cipher}a190910667126ac6aa3594a19b1738f85a8d9c6243496b44f7ed48448ff0535d'
   roles: USER
