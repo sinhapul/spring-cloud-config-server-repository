@@ -46,7 +46,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=public&binaryTransfer=true&reWriteBatchedInserts=true
     username: postgres
-    password: '{cipher}d64e419875cea4ed896deee5285c0066d98ab59347a212d3d1ee99794da22284'
+    password: '{cipher}943b393ad4184e5be7aaae999745dd4b9737458d09aaab107eb459d5c8c2afb7'
     driver-class-name: org.postgresql.Driver
     platform: postgres
     schema: classpath:init-schema.sql
