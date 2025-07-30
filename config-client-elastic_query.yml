@@ -24,8 +24,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak-authorization-server:9091/auth/realms/microservices-realm
-          jwk-set-uri: http://keycloak-authorization-server:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
+          issuer-uri: http://localhost:9091/auth/realms/microservices-realm
+          jwk-set-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/certs
       client:
         registration:
           keycloak:
@@ -35,7 +35,7 @@ spring:
             scope: openid
         provider:
           keycloak:
-            issuer-uri: http://keycloak-authorization-server:9091/auth/realms/microservices-realm/protocol/openid-connect/token
+            issuer-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/token
   jpa:
     open-in-view: false
     show-sql: true
