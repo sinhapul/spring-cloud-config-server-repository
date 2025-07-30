@@ -35,7 +35,7 @@ spring:
             scope: openid
         provider:
           keycloak:
-            issuer-uri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/token
+            tokenUri: http://localhost:9091/auth/realms/microservices-realm/protocol/openid-connect/token
   jpa:
     open-in-view: false
     show-sql: true
