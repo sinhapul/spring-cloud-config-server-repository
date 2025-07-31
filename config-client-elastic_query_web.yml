@@ -40,9 +40,9 @@ spring:
             scope: openid
         provider:
           keycloak:
-            issuerUri: http://localhost:9091/auth/realms/microservices-realm
+            issuerUri: http://keycloak-authorization-server:9091/auth/realms/microservices-realm
 security:
-  logout-success-url: http://localhost:8184/elastic-query-web-client
+  logout-success-url: http://elastic-query-web-client-1:8184/elastic-query-web-client
   default-client-registration-id: keycloak
 
 user-config:
